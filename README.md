@@ -4,7 +4,7 @@
 
 # Awesome Portfolio Template
 
-**클론. 설정. 배포. 5분이면 끝납니다.**
+**클론. 설정. 배포. 5분이면 끝!**
 
 Next.js 16 · Tailwind CSS v4 · TypeScript · Framer Motion
 
@@ -36,8 +36,6 @@ Next.js 16 · Tailwind CSS v4 · TypeScript · Framer Motion
 ---
 
 ## 왜 이 템플릿인가?
-
-GitHub에는 포트폴리오 템플릿이 수백 개 있지만, **Next.js + 다국어 + 다크 모드 + 경력 상세 페이지**를 모두 갖춘 것은 거의 없습니다.
 
 - **경력 상세 페이지** — 단순 타임라인이 아닌, `/career` 페이지에서 프로젝트별 배경/역할/성과/교훈을 서술합니다. 시니어 포지션에 필수적인 기능입니다.
 - **처음부터 설계된 다국어** — 나중에 덧붙인 게 아닙니다. `next-intl` 기반 URL 라우팅(`/ko`, `/en`)까지 완전히 분리되어 있습니다.
