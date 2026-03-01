@@ -9,7 +9,7 @@
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-v4-38bdf8?logo=tailwindcss)](https://tailwindcss.com/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-**개발자를 위한 올인원 포트폴리오 템플릿**
+**모두를 위한 올인원 포트폴리오 템플릿**
 
 <br>
 
