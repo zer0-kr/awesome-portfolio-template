@@ -1,7 +1,15 @@
 {
-  "name": "portfolio",
-  "version": "0.1.0",
-  "private": true,
+  "name": "awesome-portfolio-template",
+  "version": "1.0.0",
+  "description": "All-in-one portfolio template with Next.js 16, TypeScript, Tailwind CSS v4, i18n, dark mode, and career detail page",
+  "keywords": ["portfolio", "template", "nextjs", "typescript", "tailwindcss", "i18n", "dark-mode", "framer-motion"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zer0-kr/awesome-portfolio-template"
+  },
+  "author": "zer0-kr",
+  "homepage": "https://github.com/zer0-kr/awesome-portfolio-template",
+  "license": "MIT",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
