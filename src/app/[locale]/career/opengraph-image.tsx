@@ -97,7 +97,7 @@ export default function CareerOgImage() {
 
         {/* Keywords */}
         <div style={{ display: "flex", gap: "12px" }}>
-          {["ISMS", "ISO 27001", "AWS Security", "Kubernetes", "Compliance"].map(
+          {siteConfig.seo.keywords.map(
             (keyword) => (
               <div
                 key={keyword}

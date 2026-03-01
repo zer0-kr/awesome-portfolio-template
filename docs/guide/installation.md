@@ -779,20 +779,21 @@ All commands below are **non-interactive** and suitable for automated/agent exec
 # Install Vercel CLI
 npm i -g vercel
 
-# Link to a Vercel project (creates new if needed)
 # Replace $VERCEL_TOKEN with your Vercel access token
-vercel link --yes --token=$VERCEL_TOKEN
+# https://vercel.com/account/tokens → Create → Copy
 
-# Set environment variable
+# Step 1: Initial deploy (auto-creates project, outputs preview URL)
+vercel --yes --token=$VERCEL_TOKEN
+
+# Step 2: Set the production URL environment variable
+# Use the URL from Step 1 output (e.g. https://my-portfolio-xxxxx.vercel.app)
 echo "https://your-project.vercel.app" | vercel env add NEXT_PUBLIC_BASE_URL production --token=$VERCEL_TOKEN
 
-# Deploy to production
+# Step 3: Production deploy (with env variable applied)
 vercel --prod --yes --token=$VERCEL_TOKEN
 ```
 
-> **Getting a Vercel token**: Go to https://vercel.com/account/tokens → Create → Copy the token.
-
-> **After first deploy**: The production URL will be shown in the output (e.g. `https://my-portfolio-xxxxx.vercel.app`). Use this URL for `NEXT_PUBLIC_BASE_URL`. If using a custom domain, configure it at https://vercel.com/docs/projects/domains.
+> **After deploy**: The production URL is shown in the Step 1 output (e.g. `https://my-portfolio-xxxxx.vercel.app`). Use this URL in Step 2. If using a custom domain, configure it at https://vercel.com/docs/projects/domains and re-run Step 2 with the custom domain.
 
 ### Option B: Vercel Dashboard (Manual)
 
@@ -806,26 +807,16 @@ Or use the one-click deploy button:
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/zer0-kr/awesome-portfolio-template)
 
-### Option C: Netlify CLI
+### Option C: Netlify
 
-All commands below are **non-interactive**.
+> **Note**: Next.js 16 with App Router requires Netlify's Next.js adapter (`@netlify/plugin-nextjs`). For the simplest deployment experience, **Vercel is recommended** as it provides native Next.js support. If you still want to use Netlify, use their Git-based deploy flow:
 
-```bash
-# Install Netlify CLI
-npm i -g netlify-cli
-
-# Build first
-npm run build
-
-# Create and deploy a new site (non-interactive)
-# Replace $NETLIFY_AUTH_TOKEN with your Netlify personal access token
-netlify deploy --prod --auth=$NETLIFY_AUTH_TOKEN --dir=.next
-
-# Set environment variable
-netlify env:set NEXT_PUBLIC_BASE_URL "https://your-site.netlify.app" --auth=$NETLIFY_AUTH_TOKEN
-```
-
-> **Getting a Netlify token**: Go to https://app.netlify.com/user/applications#personal-access-tokens → New access token.
+1. Push your code to GitHub
+2. Go to https://app.netlify.com/start
+3. Connect your repository
+4. Netlify auto-detects Next.js and installs the required adapter
+5. Add environment variable: `NEXT_PUBLIC_BASE_URL` = your production URL
+6. Deploy
 
 ### Option D: Self-Hosted
 
