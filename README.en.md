@@ -32,6 +32,7 @@ Built with Next.js 16 + Tailwind CSS v4 + Framer Motion — with i18n and dark m
 - **One Config File** — Edit `src/config/site.ts` + data files. No need to touch component code.
 - **Accessibility** — ARIA labels, keyboard navigation, focus management.
 - **Performance** — LazyMotion, CSS keyframe animations, optimized fonts via `next/font`.
+- **AI Agent Support** — Built-in instruction files for Claude Code, Cursor, GitHub Copilot, Windsurf, and more.
 
 ## Sections
 
@@ -201,6 +202,22 @@ src/
         ├── page.tsx          # Home page
         └── career/page.tsx   # Career detail page
 ```
+
+---
+
+## AI Agent Support
+
+This template includes instruction files that help AI coding assistants understand the project structure and assist with customization.
+
+| File | Supported Tools |
+|------|----------------|
+| `AGENTS.md` | OpenAI Codex, Gemini, Devin, Cursor, Zed, Aider, etc. (industry standard) |
+| `CLAUDE.md` | Claude Code / OpenCode |
+| `.github/copilot-instructions.md` | GitHub Copilot |
+| `.cursor/rules/project.mdc` | Cursor (glob-based rules) |
+| `.windsurfrules` | Windsurf |
+
+Just ask your AI agent to "**customize my portfolio**" and it will automatically understand the project structure, conventions, and which files to edit.
 
 ---
 

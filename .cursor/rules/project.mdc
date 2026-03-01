@@ -1,0 +1,47 @@
+---
+description: "Awesome Portfolio Template - Next.js 16 portfolio with i18n, dark mode, Framer Motion"
+alwaysApply: true
+---
+
+# Awesome Portfolio Template
+
+Next.js 16 + Tailwind CSS v4 + Framer Motion + next-intl (i18n) + next-themes (dark mode).
+
+Users customize by editing `src/config/site.ts` and `src/data/` files. Do NOT modify component code for basic personalization.
+
+## Key Files
+
+| Purpose | Location |
+|---------|----------|
+| Central config | `src/config/site.ts` (URL, author, social, nav, sections, SEO) |
+| Content data | `src/data/*.ts` (profile, experience, career, credentials, speaking, projects) |
+| i18n strings | `src/messages/ko.json`, `src/messages/en.json` |
+| Profile image | `public/profile.png` |
+| Global styles | `src/app/globals.css` |
+| Main page | `src/app/[locale]/page.tsx` |
+
+## Conventions
+
+- **Tailwind v4**: `@import "tailwindcss"`, NO `@apply`, utility classes in JSX, `cn()` for merging
+- **Framer Motion**: ALWAYS `m`, NEVER `motion` (LazyMotion provider active)
+- **i18n**: All text via `useTranslations()` or data file `ko`/`en` fields. Default locale: `ko`
+- **Dark mode**: `dark:` variants, system preference + manual toggle via next-themes
+- **TypeScript**: Strict mode, `NavKey` type from `siteConfig.nav`
+
+## Anti-Patterns
+
+- NEVER use `motion` (use `m`)
+- NEVER hardcode URLs/author info (use `siteConfig`)
+- NEVER use `@apply`
+- NEVER `as any` / `@ts-ignore`
+- NEVER skip i18n for user-facing text
+- NEVER put content in components (use `src/data/`)
+- NEVER use `transition-all` (be specific)
+
+## Commands
+
+```bash
+npm run dev      # localhost:3000
+npm run build    # Production build
+npm run lint     # ESLint
+```

@@ -1,0 +1,54 @@
+# Awesome Portfolio Template
+
+Next.js 16 + Tailwind CSS v4 + Framer Motion + next-intl (i18n) + next-themes (dark mode).
+
+Users customize by editing config and data files, not component code.
+
+## Architecture
+
+src/config/site.ts — Central config (URL, author, social, nav, sections, SEO)
+src/data/*.ts — Content data files (profile, experience, career, credentials, speaking, projects)
+src/messages/ko.json, en.json — i18n translation strings
+src/components/sections/ — Page section components
+src/components/layout/ — Header, Footer, MobileDrawer
+src/app/[locale]/page.tsx — Main portfolio page
+src/app/globals.css — Tailwind v4 + CSS custom properties
+public/profile.png — Profile photo
+
+## Customization
+
+1. Edit src/config/site.ts for site settings (URL, author, social, nav, sections, SEO)
+2. Edit src/data/*.ts for content — all text fields have ko and en variants for i18n
+3. Edit src/messages/ko.json and en.json for UI strings
+4. Replace public/profile.png with your photo
+
+## Conventions
+
+- Tailwind CSS v4: @import "tailwindcss" (NOT @tailwind), NO @apply, utility classes in JSX
+- Framer Motion: ALWAYS use m import, NEVER motion — LazyMotion provider is active
+- i18n: All user-facing text through useTranslations() or data file ko/en fields
+- Dark mode: dark: Tailwind variants, next-themes for system preference + toggle
+- TypeScript strict mode, no as any / @ts-ignore
+- Use cn() from src/lib/utils.ts for conditional class merging
+
+## Common Tasks
+
+Add section: Create src/components/sections/my-section.tsx, add to page.tsx, update siteConfig.nav + sections, add i18n keys
+Add language: Create src/messages/{locale}.json, update src/i18n/routing.ts + middleware.ts, add locale to data fields
+Remove section: Set false in siteConfig.sections, remove from siteConfig.nav
+
+## Anti-Patterns
+
+- NEVER use motion (use m for LazyMotion)
+- NEVER hardcode site URL or author info (use siteConfig)
+- NEVER use @apply in Tailwind v4
+- NEVER suppress TypeScript errors (as any, @ts-ignore)
+- NEVER skip i18n for user-facing text
+- NEVER put content in components (use src/data/)
+- NEVER use transition-all (be specific: transition-colors, transition-shadow)
+
+## Commands
+
+npm run dev — Dev server (localhost:3000)
+npm run build — Production build
+npm run lint — ESLint
