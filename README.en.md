@@ -29,7 +29,7 @@ Next.js 16 · Tailwind CSS v4 · TypeScript · Framer Motion
 
 ---
 
-## Why This Template?
+## Highlights
 
 Hundreds of portfolio templates on GitHub, but few combine i18n, dark mode, and a career detail page in one package.
 

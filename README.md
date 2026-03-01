@@ -29,7 +29,7 @@ Next.js 16 · Tailwind CSS v4 · TypeScript · Framer Motion
 
 ---
 
-## 왜 이 템플릿인가?
+## 하이라이트
 
 GitHub에 포트폴리오 템플릿은 많지만, 다국어·다크 모드·경력 상세 페이지까지 갖춘 건 찾기 어렵습니다.
 
