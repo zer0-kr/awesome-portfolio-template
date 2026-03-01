@@ -13,7 +13,7 @@ Built with Next.js 16 + Tailwind CSS v4 + Framer Motion — with i18n and dark m
 
 [한국어](README.md) | [English](README.en.md)
 
-[**Live Demo**](https://jihoon-gong.vercel.app) &nbsp;|&nbsp; [**Deploy Your Own**](#-deploy)
+[**Live Demo**](https://jihoon-gong.vercel.app) &nbsp;|&nbsp; [**Deploy Your Own**](#deploy)
 
 <img src=".github/demo.gif" alt="Awesome Portfolio Template Demo - Dark mode, language switch, scroll animations" width="720" />
 
