@@ -138,6 +138,24 @@ LazyMotion, CSS keyframes, `next/font` optimization. High Lighthouse scores.
 
 ---
 
+## 🤖 Install with AI Agents
+
+Using **Claude Code**, **Cursor**, **Windsurf**, **ChatGPT**, or another AI coding agent?
+
+Feed the output of the command below to your agent — it will handle **cloning → collecting your info → customization → build → deployment** automatically.
+You won't need to write a single line of code.
+
+```bash
+curl -s https://raw.githubusercontent.com/zer0-kr/awesome-portfolio-template/main/docs/guide/installation.md
+```
+
+> [!TIP]
+> Tell your agent: _"Read the output of the command above and set up my portfolio"_
+> 
+> The guide includes a personal-info checklist, config file interfaces, and deploy commands — everything the agent needs to complete the job autonomously.
+
+---
+
 ## Quick Start
 
 ```bash
@@ -264,16 +282,6 @@ sections: {
 Also remove the entry from the `nav` array to hide it from navigation.
 
 </details>
-
----
-
-## For LLM Agents
-
-Fetch the installation guide and follow it:
-
-```bash
-curl -s https://raw.githubusercontent.com/zer0-kr/awesome-portfolio-template/main/docs/guide/installation.md
-```
 
 ---
 

@@ -136,6 +136,24 @@ LazyMotion, CSS 키프레임, `next/font` 최적화. Lighthouse 고득점.
 
 ---
 
+## 🤖 AI 에이전트로 설치하기
+
+**Claude Code**, **Cursor**, **Windsurf**, **ChatGPT** 등 AI 코딩 에이전트를 사용하고 계신가요?
+
+아래 명령어의 결과를 에이전트에게 전달하면, **클론 → 개인정보 입력 → 커스터마이징 → 빌드 → 배포**까지 자동으로 수행합니다.
+코드를 한 줄도 직접 작성할 필요가 없습니다.
+
+```bash
+curl -s https://raw.githubusercontent.com/zer0-kr/awesome-portfolio-template/main/docs/guide/installation.md
+```
+
+> [!TIP]
+> 에이전트에게 이렇게 말하세요: _"위 명령어 결과를 읽고, 내 포트폴리오를 설치해줘"_
+> 
+> 설치 가이드에는 필요한 개인정보 체크리스트, 설정 파일 인터페이스, 배포 명령어가 모두 포함되어 있어 에이전트가 자율적으로 작업을 완료할 수 있습니다.
+
+---
+
 ## 빠른 시작
 
 ```bash
@@ -262,16 +280,6 @@ sections: {
 `nav` 배열에서도 해당 항목을 제거하면 네비게이션에서 사라집니다.
 
 </details>
-
----
-
-## For LLM Agents
-
-설치 가이드를 가져와서 따라하세요:
-
-```bash
-curl -s https://raw.githubusercontent.com/zer0-kr/awesome-portfolio-template/main/docs/guide/installation.md
-```
 
 ---
 
