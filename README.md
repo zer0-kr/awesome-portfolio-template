@@ -1,4 +1,4 @@
-> [English ver.](README.en.md)
+> [English version](README.en.md)
 
 <div align="center">
 
