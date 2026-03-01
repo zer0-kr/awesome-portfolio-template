@@ -1,4 +1,4 @@
-> [한국어](README.md)
+> [한국어로 보기](README.md)
 
 <div align="center">
 
