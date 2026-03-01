@@ -61,6 +61,16 @@ Built with Next.js 16 + Tailwind CSS v4 + Framer Motion — with i18n and dark m
 
 ---
 
+## For LLM Agents
+
+Fetch the installation guide and follow it:
+
+```
+curl -s https://raw.githubusercontent.com/zer0-kr/awesome-portfolio-template/main/docs/guide/installation.md
+```
+
+---
+
 ## Quick Start
 
 ### 1. Use This Template
