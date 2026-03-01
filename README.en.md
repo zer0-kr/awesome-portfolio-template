@@ -31,10 +31,12 @@ Next.js 16 · Tailwind CSS v4 · TypeScript · Framer Motion
 
 ## Why This Template?
 
-- **Career detail page** — Not just a timeline. A dedicated `/career` page where you walk through each project's background, role, results, and lessons. Senior engineers need this. Most templates don't have it.
-- **i18n built in from the start** — Not bolted on afterward. Full URL routing (`/ko`, `/en`) via `next-intl` with Korean and English ready to go.
-- **One config file to rule them all** — Edit `src/config/site.ts` and seven data files. You never need to touch component code.
-- **Weeks of polish, ready in minutes** — Framer Motion animations, gradient orbs, smooth scroll indicators. The kind of quality that takes weeks to build from scratch.
+There are hundreds of portfolio templates on GitHub, but few combine i18n, dark mode, and a dedicated career detail page in one polished package.
+
+- **Career detail page** — Timelines aren't enough. The `/career` page lets you tell the full story of each project: background, role, results, and lessons learned.
+- **i18n from day one** — Full URL routing (`/ko`, `/en`) via `next-intl` with Korean and English included. Adding more languages is straightforward.
+- **One config, done** — Edit `src/config/site.ts` and seven data files. No need to touch component code.
+- **Polished design, ready to go** — Framer Motion animations, gradient orbs, scroll indicators. Weeks of work, ready in minutes.
 
 ---
 
@@ -148,7 +150,7 @@ curl -s https://raw.githubusercontent.com/zer0-kr/awesome-portfolio-template/mai
 
 ---
 
-## 🧑‍💻 Manual Setup
+## Manual Setup
 
 ```bash
 git clone https://github.com/zer0-kr/awesome-portfolio-template.git my-portfolio
