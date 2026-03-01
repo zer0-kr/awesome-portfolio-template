@@ -148,7 +148,7 @@ curl -s https://raw.githubusercontent.com/zer0-kr/awesome-portfolio-template/mai
 
 ---
 
-## Quick Start
+## Manual Setup
 
 ```bash
 git clone https://github.com/zer0-kr/awesome-portfolio-template.git my-portfolio

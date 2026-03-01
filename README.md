@@ -148,7 +148,7 @@ curl -s https://raw.githubusercontent.com/zer0-kr/awesome-portfolio-template/mai
 
 ---
 
-## 빠른 시작
+## 사람이 설치하기
 
 ```bash
 git clone https://github.com/zer0-kr/awesome-portfolio-template.git my-portfolio
